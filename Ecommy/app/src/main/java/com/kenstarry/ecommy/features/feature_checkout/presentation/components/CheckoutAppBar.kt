@@ -32,8 +32,7 @@ fun CheckoutAppBar() {
         title = {
             Row(
                 modifier = Modifier
-                    .fillMaxSize()
-                    .padding(horizontal = 16.dp),
+                    .fillMaxSize(),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -71,5 +70,7 @@ fun CheckoutAppBar() {
                 }
             }
         },
+        modifier = Modifier
+            .background(color = Color.White)
     )
 }
