@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -58,7 +59,8 @@ fun VoucherSection() {
                 .clip(RoundedCornerShape(16))
                 .background(Pink80)
                 .padding(all = 24.dp),
-            horizontalArrangement = Arrangement.SpaceBetween
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
 
             Text(
@@ -67,7 +69,11 @@ fun VoucherSection() {
                 fontWeight = FontWeight.ExtraBold
             )
 
-            Box {
+            Box(
+                modifier = Modifier
+                    .background(Color.White)
+                    .padding(horizontal = 4.dp)
+            ) {
                 Text(
                     text = "59OF",
                     fontSize = 20.sp,
