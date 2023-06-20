@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.kenstarry.ecommy.features.feature_checkout.presentation.components.CheckoutAppBar
 import com.kenstarry.ecommy.features.feature_checkout.presentation.components.MasterCardSection
 import com.kenstarry.ecommy.features.feature_checkout.presentation.components.PaymentSection
+import com.kenstarry.ecommy.features.feature_checkout.presentation.components.VoucherSection
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -45,7 +46,7 @@ fun CheckoutPage() {
                     .padding(all = 24.dp)
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(24.dp)
+                verticalArrangement = Arrangement.spacedBy(32.dp)
             ) {
 
                 //  master card section
@@ -53,6 +54,7 @@ fun CheckoutPage() {
                 //  payment section
                 PaymentSection()
                 //  Promo / voucher section
+                VoucherSection()
                 //  total section
 
             }
