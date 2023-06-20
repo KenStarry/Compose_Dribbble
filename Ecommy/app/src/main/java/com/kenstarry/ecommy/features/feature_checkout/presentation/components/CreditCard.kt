@@ -106,16 +106,16 @@ fun CreditCard() {
                 onDraw = {
                     //  first circle
                     drawCircle(
-                        color = Color.Red,
+                        color = Color.Gray,
                         radius = 50f,
-                        center = Offset(x = this.size.width, y = this.size.height / 2)
+                        center = Offset(x = this.size.width * 0.93f, y = this.size.height / 2)
                     )
 
                     //  second circle
                     drawCircle(
                         color = Color.White,
                         radius = 50f,
-                        center = Offset(x = this.size.width * 0.75f, y = this.size.height / 2)
+                        center = Offset(x = this.size.width * 0.80f, y = this.size.height / 2)
                     )
                 }
             )

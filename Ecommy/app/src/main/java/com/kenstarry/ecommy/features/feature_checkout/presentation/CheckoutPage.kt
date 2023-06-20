@@ -41,7 +41,7 @@ fun CheckoutPage() {
                 modifier = Modifier
                     .fillMaxSize()
                     .background(color = Color.White)
-                    .padding(all = 16.dp)
+                    .padding(all = 24.dp)
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(24.dp)
