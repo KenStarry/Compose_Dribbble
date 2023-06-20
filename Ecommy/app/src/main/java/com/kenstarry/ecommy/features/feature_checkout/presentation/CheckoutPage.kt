@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kenstarry.ecommy.features.feature_checkout.presentation.components.CheckoutAppBar
 import com.kenstarry.ecommy.features.feature_checkout.presentation.components.MasterCardSection
+import com.kenstarry.ecommy.features.feature_checkout.presentation.components.PaymentSection
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -50,6 +51,7 @@ fun CheckoutPage() {
                 //  master card section
                 MasterCardSection()
                 //  payment section
+                PaymentSection()
                 //  Promo / voucher section
                 //  total section
 
